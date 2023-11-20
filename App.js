@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import SplashScreen from 'react-native-splash-screen'
-// import { } from 'react-native';
 import DiceScreen from './src/DiceScreen';
 
 function App() {
