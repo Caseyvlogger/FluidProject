@@ -4,7 +4,7 @@ import Animated, { useSharedValue, withSpring, runOnJS } from 'react-native-rean
 import Dice from './components/Dice';
 
 const DiceScreen = () => {
-
+    // Alt + Shift + -> to copy function's contents
     const [randomDiceState, setRandomDiceState] = useState("");
     const [dicePlaying, setDicePlaying] = useState(false);
     const [buttonPressed, setButtonPressed] = useState(false);
@@ -41,7 +41,13 @@ const DiceScreen = () => {
         // rotate.value = withSpring("0deg")
     }
     return (
-        <View style={{ alignItems: 'center', justifyContent: 'center', height: '100%', backgroundColor: 'white' }}>
+        <View style={{ alignItems: 'center', justifyContent: 'center', height: '100%', backgroundColor: 'white', borderWidth: 1, borderColor: 'blue' }}>
+            <View style={{ position: 'absolute', top: '10%', }}>
+
+                <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', alignSelf: 'center' }}>Animated</Text>
+                <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', alignSelf: 'center' }}>Dice</Text>
+                <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold', alignSelf: 'center' }}>Roller</Text>
+            </View>
             <Animated.View
                 style={[
                     // { transform: [{ rotate }] },
